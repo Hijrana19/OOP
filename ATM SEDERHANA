@@ -1,0 +1,37 @@
+print("PROGRAM ATM SEDERHANA")
+print("PILIH OPTION:")
+print("1.Cek Saldo")
+print("2.Menarik")
+print("3.Menabung")
+
+Pilih = int(input("Masukkan Option:"))
+Saldo = 200000
+if Pilih==1:
+    print("Saldo Berjumlah Rp.200.000")
+elif Pilih==2:
+    print("Saldo berjumlah Rp.200.000, Mau ambil berapa?")
+    print("1. Rp.100.000")
+    print("2.Rp.150.000")
+    print("3. Rp.200.000")
+    pilih2 = int(input("Pilihan:"))
+    if pilih2==1:
+        Hasil1 = Saldo - 100000
+        print('''Transaksi Berhasil
+    Sisa Saldo Anda Sekarang Berjumlah:Rp.''',Hasil1)
+    elif pilih2==2:
+        Hasil2 = Saldo - 150000
+        print('''Transaksi Berhasil
+    Sisa Saldo Anda Sekarang:Rp.''',Hasil2)
+    elif pilih2==3:
+        Hasil3 = Saldo - 200000
+        print('''Transaksi Berhasil
+    Sisa Saldo Anda Sekarang Berjumlah:Rp.''',Hasil3)
+    else:
+        print("Keyword Anda Salah, Mohon Ulangi Lagi")
+elif Pilih==3:
+    print("Saldo Berjumlah Rp.200.000")
+    pilih3 = int(input("Masukkan Jumlah Uang:"))
+    Hasil4 = Saldo+pilih3
+    print("Jumlah Saldo Sekarang:Rp.",Hasil4)
+else:
+    print("Pilihan Anda Salah, Silahkan Ulangi")
