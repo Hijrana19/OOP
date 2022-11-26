@@ -1,0 +1,30 @@
+print ("Nama : HIJRANA")
+print ("NIM : D0221082")
+print ("Kelas : INFORMATIKA F")
+print("_"*25,"Perhitungan Luas","_"*25)
+
+print("1.Luas Persegi")
+def LuasPersegi():
+    Sisi = int(input("Masukkan Sisi Persegi: "))
+    Luas = Sisi*Sisi
+    print ("Luas Persegi Adalah: ",Luas)
+LuasPersegi()
+print("\n")
+
+print("2.Luas Lingkaran")
+def LuasLingkaran (diameter):
+    phi = 3.4
+    r = diameter/2
+    luas = 2*phi*r
+    return luas
+diameter = int(input("Masukkan Diameter Lingkaran: "))
+print ("Luas Lingkaran Adalah: ",LuasLingkaran(diameter))
+print("\n")
+
+print("3.Luas Segitiga")
+def LuasSegitiga():
+    Alas = int(input("Masukkan Alas Segitiga: "))
+    Tinggi = int(input("Masukkan Tinggi Segitiga: "))
+    Luas = 1/2 * Alas * Tinggi
+    print("Luas Segitiga Adalah: ",Luas)
+LuasSegitiga()
