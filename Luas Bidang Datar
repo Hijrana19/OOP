@@ -1,0 +1,44 @@
+# NAMA : HIJRANA
+# NIM : D0221082
+# KELAS : INFORMATIKA F
+
+def Pilih():
+    while True:
+        print("PROGRAM MENGHITUNG LUAS BIDANG DATAR")
+        print("1. Menghitung Luas Persegi")
+        print("2. Menghitung Luas Lingkaran")
+        print("3. Menghitung Luas Segitiga")
+        print("4. Keluar")
+
+        Pilih = int(input("Masukkan Pilihan: "))
+        if Pilih == 1:
+            LuasPersegi()
+        elif Pilih == 2:
+            LuasLingkaran()
+        elif Pilih == 3:
+            LuasSegitiga()
+        elif Pilih == 4:
+            print("KELUAR".center(50,"_"))
+            exit()
+        else:
+            print("Pilihan Tidak Tersedia. Mohon Coba Lagi")
+
+def LuasPersegi():
+            print("MENGHITUNG LUAS PERSEGI")
+            Sisi = int(input("Masukkan Sisi Persegi: "))
+            Luas = Sisi*Sisi
+            print ("Luas Persegi Adalah: ",Luas)
+            print("\n")
+def LuasLingkaran ():
+    print("MENGHITUNG LUAS LINGKARAN")
+    r = int(input("Masukkan Jari-Jari Lingkaran: "))
+    Luas = 3.4*r**2
+    print("Luas Lingkaran Adalah: ",Luas)
+    print("\n")
+def LuasSegitiga():
+    Alas = int(input("Masukkan Alas Segitiga: "))
+    Tinggi = int(input("Masukkan Tinggi Segitiga: "))
+    Luas = 1/2 * Alas * Tinggi
+    print("Luas Segitiga Adalah: ",Luas)   
+Pilih()
+
